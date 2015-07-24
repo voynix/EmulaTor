@@ -1,0 +1,9 @@
+# ignore the PyCharm metadata
+*idea/
+
+# ignore .pyc files
+*.pyc
+
+# ignore test files
+test/
+test*
