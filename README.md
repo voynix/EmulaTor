@@ -6,7 +6,7 @@ EmulaTor aims to automate as many of the tedious details of Emulab configuration
 
 EmulaTor is a project of the Georgetown University [Security Lab](https://security.cs.georgetown.edu).
 
-[Contact](mailto:aj499@georgetown.edu): aj499 <at> georgetown <dot> edu
+[Contact](mailto:aj499@georgetown.edu): aj499@georgetown.edu
 
 ## Dependencies
 
@@ -54,7 +54,7 @@ For more information run `python emulator.py -h`.
 
 ### Misc Configuration
 *    `-j PROJECT_NAME` - The name of the EmuLab project under which the experiment will be run (ie the name of the folder in `/proj` you use)
-*    `-g FILE ...` - Copies the listed files or folders into the output folder for the experiment
+*    `-i FILE ...` - Copies the listed files or folders into the output folder for the experiment
 *    `-v` - Overwrite `NAME` and `NAME.tar.gz` if they already exist
 *    `-o OS` - Use a different OS for all nodes in the experiment. By default, Emulator loads all nodes with `UBUNTU12-64-STD`. See the [EmuLab website](https://www.emulab.net/showosid_list.php3) for the full list of available OSs. Note that if you use `-o` to specify a different OS you must use `-t` to provide a version of Tor statically built for that OS, as the version of Tor packaged with Emulator is built against `UBUNTU12-64-STD` and is unlikely to work elsewhere.
 *    `-t TOR` - Use the specified Tor executable for all Tor nodes in the experiment. This option should be considered mandatory is `-o` is used. For instructions on creating a statically compiled version of Tor, see [Useful Notes](#statically-compiling-tor) below.
