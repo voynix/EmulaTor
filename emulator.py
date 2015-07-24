@@ -55,7 +55,7 @@ parser.add_argument('-r', '--loss-rates', metavar = 'RATE', default = [], nargs 
                                                                                                To give all lossy nodes the same loss rate pass one value with -r. \
                                                                                                To give each lossy node its own loss rate pass one rate per node or group of nodes in corresponding order.')
 parser.add_argument('-f', '--script-file', metavar = 'FILE', help = 'configure scripts based on the specification given in this file')
-parser.add_argument('-i', '--include-files', metavar = 'FILES', default = [], nargs = '*', help = 'a list of files or folders to copy into the output folder')
+parser.add_argument('-i', '--include-files', metavar = 'FILE', default = [], nargs = '*', help = 'a list of files or folders to copy into the output folder')
 parser.add_argument('--setup-script', metavar = 'SETUP-SCRIPT', help = 'a setup script to run on all nodes.\nIf the name of the script contains \'##\', \
                                                                  a copy of the script will be made for each node with \'##\' replaced with the name of the node \
                                                                  in the name and body of the script.\n \
